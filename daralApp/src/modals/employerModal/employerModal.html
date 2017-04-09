@@ -1,0 +1,21 @@
+<ion-header>
+        <ion-title>Nowy kontakt</ion-title>
+    </ion-header>
+    <ion-content>
+        <ion-item>
+            <ion-label color="primary" floating>Nazwa</ion-label>
+            <ion-input type="text" [(ngModel)]="name" required></ion-input>
+        </ion-item>
+        <ion-item>>
+            <ion-label color="primary" floating>Telefon</ion-label>
+            <ion-input type="tel" [(ngModel)]="telephone" required></ion-input>
+        </ion-item>
+        <ion-item>>
+            <ion-label color="primary" floating>Grupa</ion-label>
+            <ion-input type="text" [(ngModel)]="group" required></ion-input>           
+        </ion-item>
+        <ion-buttons>
+            <button ion-button (click)="close()">Anuluj</button>
+            <button ion-button (click)="create()">Dodaj</button>
+        </ion-buttons>
+    </ion-content>
